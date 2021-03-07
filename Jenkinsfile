@@ -13,7 +13,7 @@ pipeline {
         stage('Run Test'){
             steps{
                 //run build command
-                sh 'mvn test'+ testSuite 
+                sh 'mvn test -Dtest= '+ testSuite 
 
             }
         }
