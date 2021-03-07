@@ -1,3 +1,7 @@
+
+def TEST_SUITE=params.TEST_SUITE
+
+
 pipeline {
     agent any
 
@@ -5,13 +9,19 @@ pipeline {
     stages {
         stage('Download resources'){
             steps {
-               echo 'se deberian descargar los resources'
+                echo 'se deberian descargar los resources'
             }
         }
         stage('Run Test'){
             steps{
                 //run build command
-                sh 'mvn test'
+                sh 'mvn test'+ TEST_SUITE 
+
+            }
+        }
+        post{
+            cleanup{
+                deleteDir()
 
             }
         }
