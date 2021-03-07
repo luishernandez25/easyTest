@@ -13,7 +13,7 @@ pipeline {
         stage('Run Test'){
             steps{
                 //update resources
-		sh'mvn compile'
+		sh'mvn test'
 		//run test    
                 sh 'mvn test -Dtest='+ testSuite 
 
