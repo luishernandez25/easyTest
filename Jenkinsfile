@@ -12,7 +12,9 @@ pipeline {
         }
         stage('Run Test'){
             steps{
-                //run build command
+                //update resources
+		sh'mvn compile'
+		//run test    
                 sh 'mvn test -Dtest='+ testSuite 
 
             }
