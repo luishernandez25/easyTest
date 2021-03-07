@@ -1,11 +1,9 @@
 
-def TEST_SUITE=params.TEST_SUITE
-
-
 pipeline {
     agent any
-
-
+       parameters{
+	              string (name: 'testSuite', default:'',description:'colocar el test a probar'
+	}
     stages {
         stage('Download resources'){
             steps {
@@ -15,7 +13,7 @@ pipeline {
         stage('Run Test'){
             steps{
                 //run build command
-                sh 'mvn test'+ TEST_SUITE 
+                sh 'mvn test'+ testSuite 
 
             }
         }
@@ -24,6 +22,4 @@ pipeline {
                 deleteDir()
 
             }
-        }
-    }
-}
+   
