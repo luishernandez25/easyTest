@@ -2,7 +2,7 @@
 pipeline {
     agent any
        parameters{
-	              string (name: 'testSuite', default:'',description:'colocar el test a probar'
+	              string (name: 'testSuite', default:'',description:'colocar el test a probar')
 	}
     stages {
         stage('Download resources'){
@@ -22,4 +22,6 @@ pipeline {
                 deleteDir()
 
             }
-   
+        }
+    }
+}
