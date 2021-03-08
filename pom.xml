@@ -64,6 +64,7 @@
                         <useFile>false</useFile>
                         <!--runOrder>alphabetical</runOrder -->
                         <!-- <rerunFailingTestsCount>3</rerunFailingTestsCount> -->
+                        <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
                         <skipAfterFailureCount>50</skipAfterFailureCount>
                         <testFailureIgnore>false</testFailureIgnore>
                         <failIfNoTests>false</failIfNoTests>
