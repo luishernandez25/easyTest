@@ -57,11 +57,12 @@
 
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.19.1</version>
+                    <version>2.20</version>
                     <configuration>
                         <useSystemClassLoader>false</useSystemClassLoader>
                         <runOrder>random</runOrder>
                         <useFile>false</useFile>
+                        <useSystemClassLoader>false</useSystemClassLoader>
                         <!--runOrder>alphabetical</runOrder -->
                         <!-- <rerunFailingTestsCount>3</rerunFailingTestsCount> -->
                         <forkCount>3</forkCount>
