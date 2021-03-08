@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.9.101-hotspot\bin"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dtest=PracticaIle#loginBanco"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dtest=PracticaIle#loginBanco -DargLine=-Djdk.net.URLClassPath.disableClassPathURLCheck=true"/>
     <property name="jdk.debug" value="release"/>
     <property name="maven.home" value="C:\Users\Luis\3D Objects\apache-maven-3.6.3\bin\.."/>
     <property name="test" value="PracticaIle#loginBanco"/>
@@ -64,6 +64,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="library.jansi.path" value="C:\Users\Luis\3D Objects\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
     <property name="java.class.version" value="55.0"/>
+    <property name="argLine" value="-Djdk.net.URLClassPath.disableClassPathURLCheck=true"/>
   </properties>
   <testcase name="loginBanco" classname="PracticaIle" time="0.005"/>
 </testsuite>

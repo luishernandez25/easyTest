@@ -75,7 +75,7 @@
                         <!-- <parallel>methods</parallel> -->
                         <!-- <perCoreThreadCount>1</perCoreThreadCount> -->
                         <!-- <parallel>classes</parallel> -->
-                        <!-- <threadCount>2</threadCount> -->
+                         <threadCount>1</threadCount>
                         <!-- <forkCount>2</forkCount> -->
                         <!-- <reuseForks>true</reuseForks> -->
 
