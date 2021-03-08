@@ -68,7 +68,7 @@
                         <reuseForks>true</reuseForks>
                         <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
                         <skipAfterFailureCount>50</skipAfterFailureCount>
-                        <testFailureIgnore>false</testFailureIgnore>
+                        <testFailureIgnore>true</testFailureIgnore>
                         <failIfNoTests>false</failIfNoTests>
                         <!--generateReports>false</generateReports -->
                         <!-- <parallel>methods</parallel> -->
